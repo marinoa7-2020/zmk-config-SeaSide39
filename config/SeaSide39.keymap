@@ -45,10 +45,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W     &kp E         &kp R     &kp T                                              &kp Y        &kp U  &lt 5 I   &kp O     &kp P
-&kp A             &kp S     &kp D         &kp F     &kp G                                              &kp H        &kp J  &kp K     &kp L     &kp SEMICOLON
-&mt LEFT_SHIFT Z  &kp X     &kp C         &kp V     &kp B                                              &kp N        &kp M  &mkp MB1  &mkp MB3  &kp SLASH
-&kp LCTRL         &kp LWIN  &kp LEFT_ALT  &lt 3 AT  &lt 2 SPACE  &lt 1 ENTER      &mt RCTRL BACKSPACE  &lt 3 MINUS                             &lt 1 BACKSLASH
+&kp Q             &kp W     &kp E         &kp R       &kp T                                              &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S     &kp D         &kp F       &kp G                                              &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
+&mt LEFT_SHIFT Z  &kp X     &kp C         &kp V       &kp B                                              &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp LCTRL         &kp LWIN  &kp LEFT_ALT  &lt 3 LBRC  &lt 2 SPACE  &lt 1 ENTER      &mt RCTRL BACKSPACE  &lt 3 MINUS                             &lt 1 INT1
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -56,10 +56,10 @@
 
         SYMBOL {
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans              &kp LBKT                                       &kp END                 &kp PAGE_UP  &kp PAGE_DOWN  &trans    &kp DEL
-&trans      &trans  &trans  &trans              &kp COLON                                      &kp HOME                &kp LEFT     &kp UP_ARROW   &kp DOWN  &kp RIGHT
-&trans      &trans  &trans  &trans              &kp BACKSLASH                                  &mkp MB4                &mkp MB1     &mkp MB2       &mkp MB5  &mkp MB3
-&trans      &trans  &trans  &lt 3 LEFT_BRACKET  &lt 2 SPACE    &lt 1 ENTER      &kp BACKSPACE  &lt_to_layer_0 3 MINUS                                        &trans
+&kp ESCAPE  &trans  &trans  &trans              &kp RBRC                                           &kp END                 &kp PAGE_UP  &kp PAGE_DOWN  &trans    &kp DEL
+&trans      &trans  &trans  &trans              &kp DOUBLE_QUOTES                                  &kp HOME                &kp LEFT     &kp UP_ARROW   &kp DOWN  &kp RIGHT
+&trans      &trans  &trans  &trans              &kp NUHS                                           &mkp MB4                &mkp MB1     &mkp MB2       &mkp MB5  &mkp MB3
+&trans      &trans  &trans  &lt 3 LEFT_BRACKET  &lt 2 SPACE        &lt 1 ENTER      &kp BACKSPACE  &lt_to_layer_0 3 MINUS                                        &trans
             >;
         };
 
