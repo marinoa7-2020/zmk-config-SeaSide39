@@ -7,10 +7,14 @@
 #define SCROLL 5
 #define NUM 6
 
-/* Shift + Z 用（既に安定しているのでそのまま） */
 &mt {
     flavor = "tap-preferred";
-    quick-tap-ms = <200>;
+    quick-tap-ms = <150>;
+};
+
+&lt {
+    flavor = "balanced";
+    quick-tap-ms = <350>;
 };
 
 / {
@@ -26,26 +30,13 @@
     };
 
     behaviors {
-        /* 既存：Layer0 戻り */
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
             bindings = <&mo>, <&to_layer_0>;
+
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
-        };
-
-        /* ★ 安定版：レイヤー長押し＋タップキー ★ */
-        lt_hold_layer: lt_hold_layer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LT_HOLD_LAYER";
-
-            flavor = "hold-preferred";
-            tapping-term-ms = <320>;
-            quick-tap-ms = <150>;
-
-            bindings = <&mo>, <&kp>;
-            #binding-cells = <2>;
+            tapping-term-ms = <300>;
         };
     };
 
@@ -54,10 +45,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W     &kp E         &kp R               &kp T                                              &kp Y        &kp U  &lt_hold_layer 5 I    &kp O    &kp P
-&kp A             &kp S     &kp D         &kp F               &kp G                                              &kp H        &kp J  &kp K                 &kp L    &kp SEMICOLON
-&mt LEFT_SHIFT Z  &kp X     &kp C         &kp V               &kp B                                              &kp N        &kp M  &kp COMMA             &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LCTRL         &kp LWIN  &kp LEFT_ALT  &lt_hold_layer 3 LEFT_BRACKET  &lt_hold_layer 2 SPACE  &lt_hold_layer 1 ENTER  &mt RCTRL BACKSPACE  &lt_hold_layer 3 MINUS  &lt_hold_layer 1 INT1
+&kp Q             &kp W     &kp E         &kp R               &kp T                                              &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S     &kp D         &kp F               &kp G                                              &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
+&mt LEFT_SHIFT Z  &kp X     &kp C         &kp V               &kp B                                              &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp LCTRL         &kp LWIN  &kp LEFT_ALT  &lt 3 LEFT_BRACKET  &lt 2 SPACE  &lt 1 ENTER      &mt RCTRL BACKSPACE  &lt 3 MINUS                             &lt 1 INT1
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
