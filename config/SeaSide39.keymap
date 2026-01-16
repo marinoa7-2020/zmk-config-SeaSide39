@@ -45,7 +45,7 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W     &kp E         &kp R               &kp T                                              &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp Q             &kp W     &kp E         &kp R               &kp T                                              &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S     &kp D         &kp F               &kp G                                              &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
 &mt LEFT_SHIFT Z  &kp X     &kp C         &kp V               &kp B                                              &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &kp LCTRL         &kp LWIN  &kp LEFT_ALT  &lt 3 LEFT_BRACKET  &lt 2 SPACE  &lt 1 ENTER      &mt RCTRL BACKSPACE  &lt 3 MINUS                             &lt 1 INT1
@@ -74,10 +74,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE    &trans        &trans        &bt BT_CLR    &bt BT_CLR_ALL                      &bootloader  &trans  &trans  &trans  &kp DELETE
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                        &trans       &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &trans                              &trans       &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &trans          &trans      &trans  &trans                               &trans
+&kp ESCAPE      &trans        &bootloader   &bt BT_CLR    &bt BT_CLR_ALL                      &bt BT_CLR_ALL  &bt BT_CLR    &bootloader   &trans        &kp DELETE
+&bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                        &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&kp LEFT_SHIFT  &trans        &trans        &trans        &trans                              &to 6           &trans        &trans        &trans        &kp RIGHT_SHIFT
+&kp LCTRL       &trans        &kp LEFT_ALT  &trans        &trans          &trans      &trans  &trans                                                    &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
