@@ -30,15 +30,34 @@
     };
 
     behaviors {
-        lt_to_layer_0: lt_to_layer_0 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <180>;
-        };
+    lt_to_layer_0: lt_to_layer_0 {
+        compatible = "zmk,behavior-hold-tap";
+        label = "LAYER_TAP_TO_0";
+        bindings = <&mo>, <&to_layer_0>;
+        #binding-cells = <2>;
+        tapping-term-ms = <180>;
     };
+
+    /* Enter / SYMBOL */
+    sym_enter: sym_enter {
+        compatible = "zmk,behavior-hold-tap";
+        label = "SYM_ENTER";
+        flavor = "hold-preferred";
+        tapping-term-ms = <230>;
+        quick-tap-ms = <0>;
+        bindings = <&mo 1>, <&kp ENTER>;
+    };
+
+    /* Space / NUM */
+    num_space: num_space {
+        compatible = "zmk,behavior-hold-tap";
+        label = "NUM_SPACE";
+        flavor = "hold-preferred";
+        tapping-term-ms = <240>;
+        quick-tap-ms = <0>;
+        bindings = <&mo 2>, <&kp SPACE>;
+    };
+};
 
     keymap {
         compatible = "zmk,keymap";
@@ -48,7 +67,7 @@
 &kp Q             &kp W     &kp E         &kp R               &kp T                                              &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S     &kp D         &kp F               &kp G                                              &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
 &mt LEFT_SHIFT Z  &kp X     &kp C         &kp V               &kp B                                              &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LCTRL         &kp LWIN  &kp LEFT_ALT  &lt 3 LEFT_BRACKET  &lt 2 SPACE  &lt 1 ENTER      &mt RCTRL BACKSPACE  &lt 3 MINUS                             &lt 1 INT1
+&kp LCTRL         &kp LWIN  &kp LEFT_ALT  &lt 3 LEFT_BRACKET  &num_space  &sym_enter      &mt RCTRL BACKSPACE  &lt 3 MINUS                             &lt 1 INT1
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
