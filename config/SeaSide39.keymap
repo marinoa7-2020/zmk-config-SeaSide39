@@ -45,7 +45,7 @@
         flavor = "hold-preferred";
         tapping-term-ms = <230>;
         quick-tap-ms = <0>;
-        bindings = <&mo 1>, <&kp ENTER>;
+        bindings = < &mo 1 >, < &kp ENTER >;
     };
 
     /* Space / NUM */
@@ -55,7 +55,7 @@
         flavor = "hold-preferred";
         tapping-term-ms = <240>;
         quick-tap-ms = <0>;
-        bindings = <&mo 2>, <&kp SPACE>;
+        bindings = < &mo 2 >, < &kp SPACE >;
     };
 };
 
