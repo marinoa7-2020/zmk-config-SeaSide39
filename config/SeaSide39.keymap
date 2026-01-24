@@ -58,10 +58,10 @@
 
         SYMBOL {
             bindings = <
-&trans  &trans  &trans    &trans     &kp RBKT                              &kp END   &kp PAGE_UP  &kp PAGE_DOWN  &trans    &trans
-&trans  &trans  &kp CAPS  &kp GRAVE  &kp SINGLE_QUOTE                      &kp HOME  &kp LEFT     &kp UP_ARROW   &kp DOWN  &kp RIGHT
-&trans  &trans  &trans    &trans     &kp NUHS                              &mkp MB4  &mkp MB1     &mkp MB2       &mkp MB5  &mkp MB3
-&trans  &trans  &trans    &trans     &trans            &trans      &trans  &trans                                          &trans
+&trans  &kp LEFT_BRACE  &kp TILDE         &kp LT     &kp RBKT                              &kp END   &kp PAGE_UP  &kp PAGE_DOWN  &trans    &trans
+&trans  &trans          &kp PIPE          &kp GT     &kp SINGLE_QUOTE                      &kp HOME  &kp LEFT     &kp UP_ARROW   &kp DOWN  &kp RIGHT
+&trans  &trans          &kp LEFT_BRACKET  &kp CARET  &kp NUHS                              &mkp MB4  &mkp MB1     &mkp MB2       &mkp MB5  &mkp MB3
+&trans  &trans          &trans            &trans     &trans            &trans      &trans  &trans                                          &trans
             >;
         };
 
