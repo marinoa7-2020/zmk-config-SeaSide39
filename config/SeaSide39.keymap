@@ -20,7 +20,21 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos { 
+        compatible = "zmk,combos";
+
+        combo_fd_esc {
+            timeout-ms = <40>;
+            key-positions = <12 13>;   /* D + F */
+            bindings = <&kp ESCAPE>;
+        };
+
+        combo_jk_del {
+            timeout-ms = <40>;
+            key-positions = <16 17>;   /* J + K */
+            bindings = <&kp DELETE>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {
