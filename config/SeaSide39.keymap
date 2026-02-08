@@ -58,8 +58,8 @@
 
         SYMBOL {
             bindings = <
-&trans          &trans  &trans  &kp LEFT_BRACKET  &kp RBKT                              &kp END   &kp PAGE_UP  &kp PAGE_DOWN  &trans    &trans
-&trans          &trans  &trans  &kp SEMICOLON     &kp SINGLE_QUOTE                      &kp HOME  &kp LEFT     &kp UP_ARROW   &kp DOWN  &kp RIGHT
+&kp ESCAPE      &trans  &trans  &kp LEFT_BRACKET  &kp RBKT                              &kp END   &kp PAGE_UP  &kp PAGE_DOWN  &trans    &kp ESCAPE
+&kp TAB         &trans  &trans  &kp SEMICOLON     &kp SINGLE_QUOTE                      &kp HOME  &kp LEFT     &kp UP_ARROW   &kp DOWN  &kp RIGHT
 &kp LEFT_SHIFT  &trans  &trans  &kp SLASH         &kp NUHS                              &mkp MB4  &mkp MB1     &mkp MB2       &mkp MB5  &kp RSHFT
 &trans          &trans  &trans  &trans            &trans            &trans      &trans  &trans                                          &trans
             >;
