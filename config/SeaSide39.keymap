@@ -58,7 +58,7 @@
 
         SYMBOL {
             bindings = <
-&kp ESCAPE      &trans  &trans  &kp LBKT       &kp RBKT                              &kp END   &kp PAGE_UP  &kp PAGE_DOWN  &trans    &kp ESCAPE
+&trans          &trans  &trans  &kp LBKT       &kp RBKT                              &kp END   &kp PAGE_UP  &kp PAGE_DOWN  &trans    &kp ESCAPE
 &kp TAB         &trans  &trans  &kp SEMICOLON  &kp SINGLE_QUOTE                      &kp HOME  &kp LEFT     &kp UP_ARROW   &kp DOWN  &kp RIGHT
 &kp LEFT_SHIFT  &trans  &trans  &kp SLASH      &kp NUHS                              &mkp MB4  &mkp MB1     &mkp MB2       &mkp MB5  &kp RSHFT
 &trans          &trans  &trans  &trans         &trans            &trans      &trans  &trans                                          &trans
@@ -76,8 +76,8 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &trans  &trans  &trans  &trans                      &kp GRAVE  &kt CAPS  &trans    &trans    &kp ESCAPE
-&kp DEL         &trans  &trans  &trans  &trans                      &mo 6      &mo 5     &mo 4     &trans    &kp DELETE
+&trans          &trans  &trans  &trans  &trans                      &kp GRAVE  &kt CAPS  &trans    &trans    &kp ESCAPE
+&trans          &trans  &trans  &trans  &trans                      &mo 6      &mo 5     &mo 4     &trans    &kp DELETE
 &kp LEFT_SHIFT  &trans  &trans  &trans  &trans                      &mkp MB4   &mkp MB1  &mkp MB2  &mkp MB5  &kp RIGHT_SHIFT
 &trans          &trans  &trans  &trans  &trans  &trans      &trans  &trans                                   &trans
             >;
