@@ -76,10 +76,10 @@
 
         ARROW {
             bindings = <
-&trans          &trans  &trans  &trans  &trans                      &kp GRAVE  &kt CAPS  &trans    &trans    &kp ESCAPE
-&trans          &trans  &trans  &trans  &trans                      &mo 6      &mo 5     &mo 4     &trans    &kp DELETE
-&kp LEFT_SHIFT  &trans  &trans  &trans  &trans                      &mkp MB4   &mkp MB1  &mkp MB2  &mkp MB5  &kp RIGHT_SHIFT
-&trans          &trans  &trans  &trans  &trans  &trans      &trans  &trans                                   &trans
+&trans          &trans  &trans  &trans  &trans                      &kp LANG1  &kt LANG2  &trans    &trans    &kp ESCAPE
+&trans          &trans  &trans  &trans  &trans                      &mo 6      &mo 5      &mo 4     &trans    &kp DELETE
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans                      &mkp MB4   &mkp MB1   &mkp MB2  &mkp MB5  &kp RIGHT_SHIFT
+&trans          &trans  &trans  &trans  &trans  &trans      &trans  &trans                                    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
