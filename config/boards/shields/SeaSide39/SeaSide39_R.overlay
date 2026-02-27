@@ -28,6 +28,21 @@
         led-red   = &led_red_node;
         led-green = &led_green_node;
         led-blue  = &led_blue_node;
+    };
+
+    leds {
+        compatible = "gpio-leds";
+        led_red_node: led_0 {
+            gpios = <&gpio0 26 GPIO_ACTIVE_LOW>;
+        };
+        led_green_node: led_1 {
+            gpios = <&gpio0 30 GPIO_ACTIVE_LOW>;
+        };
+        led_blue_node: led_2 {
+            gpios = <&gpio0 6 GPIO_ACTIVE_LOW>;
+        };
+    };
+    /* --- ここまで追加 --- */
 };
 
 /* SPI 設定 */
