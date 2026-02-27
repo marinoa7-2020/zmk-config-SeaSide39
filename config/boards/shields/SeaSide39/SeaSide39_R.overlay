@@ -22,6 +22,12 @@
         device = <&trackball>;
 
     };
+
+/* --- ここから追加 --- */
+    aliases {
+        led-red   = &led_red_node;
+        led-green = &led_green_node;
+        led-blue  = &led_blue_node;
 };
 
 /* SPI 設定 */
