@@ -1,4 +1,4 @@
-manifest:
+mmmmmmmmmmmmanifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
@@ -16,6 +16,6 @@ manifest:
       revision: main
     - name: zmk-rgbled-widget
       remote: caksoylar
-      revision: main
+      revision: c810e793910f545084992923594f89d8cf226a0b
   self:
     path: config
