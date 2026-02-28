@@ -20,16 +20,17 @@
 };
 
 / {
+    /* ここから追記 */
 
-/* ここから追記 */
     aliases {
         led-red = &led0;
         led-green = &led0;
         led-blue = &led0;
     };
+
     /* ここまで追記 */
 
-combos { compatible = "zmk,combos"; };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -67,10 +68,10 @@ combos { compatible = "zmk,combos"; };
 
         SYMBOL {
             bindings = <
-&trans          &trans    &trans        &kp LBKT             &kp RBKT                                  &kp END   &kp PAGE_UP  &kp PAGE_DOWN  &trans    &kp ESCAPE
-&kp TAB         &trans    &trans        &kp SEMICOLON        &kp SINGLE_QUOTE                          &kp HOME  &kp LEFT     &kp UP_ARROW   &kp DOWN  &kp RIGHT
-&kp LEFT_SHIFT  &trans    &trans        &kp INTERNATIONAL_1  &kp NUHS                                  &mkp MB4  &mkp MB1     &mkp MB2       &mkp MB5  &kp RSHFT
-&kp LCTRL       &kp LWIN  &kp LEFT_ALT  &trans               &trans            &trans      &kp DELETE  &trans                                          &trans
+&kp ESCAPE      &trans    &trans        &kp LBKT             &kp RBKT                              &kp END   &kp PAGE_UP  &kp PAGE_DOWN  &trans    &kp DEL
+&kp TAB         &trans    &trans        &kp SEMICOLON        &kp SINGLE_QUOTE                      &kp HOME  &kp LEFT     &kp UP_ARROW   &kp DOWN  &kp RIGHT
+&kp LEFT_SHIFT  &trans    &trans        &kp INTERNATIONAL_1  &kp NUHS                              &mkp MB4  &mkp MB1     &mkp MB2       &mkp MB5  &kp RSHFT
+&kp LCTRL       &kp LWIN  &kp LEFT_ALT  &trans               &trans            &trans      &trans  &trans                                          &trans
             >;
         };
 
@@ -85,10 +86,10 @@ combos { compatible = "zmk,combos"; };
 
         ARROW {
             bindings = <
-&trans          &trans  &trans  &trans  &trans                          &kp LANG1  &kt LANG2  &trans    &trans    &kp ESCAPE
-&trans          &trans  &trans  &trans  &trans                          &mo 6      &mo 5      &mo 4     &trans    &trans
-&kp LEFT_SHIFT  &trans  &trans  &trans  &trans                          &mkp MB4   &mkp MB1   &mkp MB2  &mkp MB5  &kp RIGHT_SHIFT
-&trans          &trans  &trans  &trans  &trans  &trans      &kp DELETE  &trans                                    &trans
+&kp ESC         &trans  &trans  &trans  &trans                      &kp LANG1  &kt LANG2  &trans    &trans    &kp DEL
+&trans          &trans  &trans  &trans  &trans                      &mo 6      &mo 5      &mo 4     &trans    &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans                      &mkp MB4   &mkp MB1   &mkp MB2  &mkp MB5  &kp RIGHT_SHIFT
+&trans          &trans  &trans  &trans  &trans  &trans      &trans  &trans                                    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
