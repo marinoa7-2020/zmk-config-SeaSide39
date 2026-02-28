@@ -23,9 +23,9 @@
 
 /* ここから追記 */
     aliases {
-        led-red = &status_led;   // ここの &status_led は、使用している
-        led-green = &status_led; // アダプターの定義に合わせてください
-        led-blue = &status_led;
+        led-red = &led0;
+        led-green = &led0;
+        led-blue = &led0;
     };
     /* ここまで追記 */
 
