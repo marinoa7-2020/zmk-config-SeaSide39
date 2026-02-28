@@ -20,7 +20,16 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+
+/* ここから追記 */
+    aliases {
+        led-red = &status_led;   // ここの &status_led は、使用している
+        led-green = &status_led; // アダプターの定義に合わせてください
+        led-blue = &status_led;
+    };
+    /* ここまで追記 */
+
+combos { compatible = "zmk,combos"; };
 
     macros {
         to_layer_0: to_layer_0 {
