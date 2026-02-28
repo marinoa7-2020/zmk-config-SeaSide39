@@ -15,7 +15,7 @@
 
 &lt {
     flavor = "hold-preferred";
-    tapping-term-ms = <180>;
+    tapping-term-ms = <150>;
     quick-tap-ms = <0>;
 };
 
@@ -24,8 +24,8 @@
 
     aliases {
         led-red = &led0;
-        led-green = &led0;
-        led-blue = &led0;
+        led-green = &led1;
+        led-blue = &led2;
     };
 
     /* ここまで追記 */
