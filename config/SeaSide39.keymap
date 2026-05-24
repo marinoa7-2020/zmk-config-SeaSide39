@@ -68,8 +68,8 @@
 
         SYMBOL {
             bindings = <
-&kp ESCAPE      &trans    &trans        &kp LBKT             &kp RBKT                              &kp END   &kp PAGE_UP  &kp PAGE_DOWN  &trans    &kp DEL
-&kp TAB         &trans    &trans        &kp SEMICOLON        &kp SINGLE_QUOTE                      &kp HOME  &kp LEFT     &kp UP_ARROW   &kp DOWN  &kp RIGHT
+&kp ESCAPE      &trans    &kp EXCL      &kp LBKT             &kp RBKT                              &kp END   &kp PAGE_UP  &kp PAGE_DOWN  &trans    &kp DEL
+&kp TAB         &trans    &kp QUESTION  &kp SEMICOLON        &kp SINGLE_QUOTE                      &kp HOME  &kp LEFT     &kp UP_ARROW   &kp DOWN  &kp RIGHT
 &kp LEFT_SHIFT  &trans    &trans        &kp INTERNATIONAL_1  &kp NUHS                              &mkp MB4  &mkp MB1     &mkp MB2       &mkp MB5  &kp RSHFT
 &kp LCTRL       &kp LWIN  &kp LEFT_ALT  &trans               &trans            &trans      &trans  &trans                                          &trans
             >;
@@ -115,10 +115,10 @@
 
         CONFIG {
             bindings = <
-&bt BT_CLR_ALL  &bt BT_CLR    &trans        &trans        &trans                            &trans       &trans  &trans  &trans  &trans
-&bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &trans       &trans  &trans  &trans  &trans
-&trans          &trans        &trans        &trans        &trans                            &bootloader  &trans  &trans  &trans  &trans
-&trans          &trans        &trans        &trans        &trans        &trans      &trans  &trans                               &trans
+&kp ESCAPE      &trans        &trans        &trans        &trans                            &trans       &trans  &trans  &trans          &kp DELETE
+&bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &trans       &trans  &trans  &bt BT_CLR_ALL  &bt BT_CLR
+&kp LEFT_SHIFT  &trans        &trans        &trans        &trans                            &bootloader  &trans  &trans  &trans          &trans
+&trans          &trans        &trans        &trans        &trans        &trans      &trans  &trans                                       &trans
             >;
         };
     };
