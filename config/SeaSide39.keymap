@@ -70,17 +70,17 @@
             bindings = <
 &kp ESCAPE      &trans    &kp EXCL      &kp LBKT             &kp RBKT                              &kp END   &kp PAGE_UP  &kp PAGE_DOWN  &trans    &kp DEL
 &kp TAB         &trans    &kp QUESTION  &kp SEMICOLON        &kp SINGLE_QUOTE                      &kp HOME  &kp LEFT     &kp UP_ARROW   &kp DOWN  &kp RIGHT
-&kp LEFT_SHIFT  &trans    &trans        &kp INTERNATIONAL_1  &kp NUHS                              &mkp MB4  &mkp MB1     &mkp MB2       &mkp MB5  &kp RSHFT
+&kp LEFT_SHIFT  &trans    &kp CARET     &kp INTERNATIONAL_1  &kp NUHS                              &mkp MB4  &mkp MB1     &mkp MB2       &mkp MB5  &kp RSHFT
 &kp LCTRL       &kp LWIN  &kp LEFT_ALT  &trans               &trans            &trans      &trans  &trans                                          &trans
             >;
         };
 
         NUM {
             bindings = <
-&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                      &kp NUMBER_6  &kp N7    &kp N8    &kp N9    &kp N0
-&kp TAB         &kp F2        &kp F3        &kp F4        &kp F5                      &kp F6        &kp F7    &kp F8    &kp F9    &kp F10
-&kp LEFT_SHIFT  &trans        &trans        &trans        &trans                      &mkp MB4      &mkp MB1  &mkp MB2  &mkp MB5  &kp RIGHT_SHIFT
-&kp LCTRL       &kp LWIN      &kp LEFT_ALT  &trans        &trans  &trans      &trans  &trans                                      &trans
+&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                       &kp NUMBER_6  &kp N7    &kp N8    &kp N9    &kp N0
+&kp TAB         &kp F2        &kp F3        &kp F4        &kp F5                       &kp F6        &kp F7    &kp F8    &kp F9    &kp F10
+&kp LEFT_SHIFT  &trans        &trans        &kp F11       &kp F12                      &mkp MB4      &mkp MB1  &mkp MB2  &mkp MB5  &kp RIGHT_SHIFT
+&kp LCTRL       &kp LWIN      &kp LEFT_ALT  &trans        &trans   &trans      &trans  &trans                                      &trans
             >;
         };
 
